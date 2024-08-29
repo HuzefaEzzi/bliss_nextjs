@@ -2,10 +2,6 @@ import Head from 'next/head'
 import { FormEvent } from 'react'
 
 export default function Contact() {
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    // Handle form submission
-  }
 
   return (
     <div>
@@ -22,7 +18,7 @@ export default function Contact() {
         </section>
         <section>
           <h2>Send us a message</h2>
-          <form onSubmit={handleSubmit}>
+          <form >
             <label htmlFor="name">Name:</label>
             <input type="text" id="name" name="name" required />
 
